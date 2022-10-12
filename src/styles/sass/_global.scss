@@ -130,3 +130,57 @@
     }
   }
 }
+
+// categorySection
+
+.categoryContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 50px;
+  button {
+    width: calc(20% - 20px);
+    color: $white;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 14px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  .adult {
+    background-color: $red;
+  }
+  .orange {
+    background-color: $orange;
+  }
+  .pale {
+    background-color: $paleorange;
+  }
+  .lightgold {
+    background-color: $lightgold;
+  }
+  .kewi {
+    background-color: $kewi;
+  }
+  .green {
+    background-color: $green;
+  }
+  .sky {
+    background-color: $sky;
+  }
+  .viewAll {
+    border: 1px solid $theme2;
+    background: transparent;
+    color: $theme2;
+  }
+  .downIcon {
+    position: relative;
+    left: 30px;
+    img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}

@@ -18,7 +18,7 @@ function Navbar() {
           </li>
           <li className="navItem">
             <Link className="navLink" to="/#">
-              <span>
+              <span className="downIcon">
                 <img
                   className="navIcon profileIcon"
                   src={require("../../image/shape@3x.png")}
