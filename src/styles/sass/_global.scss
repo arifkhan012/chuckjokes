@@ -184,3 +184,63 @@
     }
   }
 }
+
+// all jokes
+.allJokes {
+  border-top: 1px solid $borderColor;
+  margin-top: 30px;
+  .catTitle {
+    span {
+      background-color: $green;
+      color: $white;
+      padding: 5px 10px;
+      border-radius: 15px;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+  }
+
+  .jokesList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .jokesCard {
+    width: calc(33.33% - 14px);
+
+    .jokesDetails {
+      // padding: 16px;
+      border: 1px solid $borderColor;
+      transition: 0.4s all ease-in-out;
+      padding: 15px;
+      img {
+        width: 20px;
+        height: 20px;
+        margin-right: 16px;
+      }
+      .title {
+        font-size: 20px;
+        color: $theme1;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+      &:hover {
+        box-shadow: 0px 1px 7px 0 rgba(0, 0, 0, 0.15);
+      }
+      .bottomContainer {
+        text-align: right;
+        .seeStats {
+          border: none;
+          outline: none;
+          background: transparent;
+          color: $orange;
+          font-size: 18px;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          gap: 15px;
+        }
+      }
+    }
+  }
+}

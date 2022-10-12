@@ -1,4 +1,5 @@
 import { BrowserRouter as Router } from "react-router-dom";
+import AllJokes from "./components/AllJokes";
 import HomeSection from "./components/HomeSection";
 import JokesCategories from "./components/JokesCategories";
 import Footer from "./components/layout/Footer";
@@ -13,6 +14,7 @@ function App() {
         <HomeSection />
         <div className="container">
           <JokesCategories />
+          <AllJokes />
         </div>
         <Footer />
       </div>
