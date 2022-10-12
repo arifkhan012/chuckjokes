@@ -1,6 +1,16 @@
+import { BrowserRouter as Router } from "react-router-dom";
+import Footer from "./components/layout/Footer";
+import Navbar from "./components/layout/Navbar";
 import "./styles/sass/main.scss";
 
 function App() {
-  return <div className="test">hello world</div>;
+  return (
+    <Router>
+      <div>
+        <Navbar />
+        <Footer />
+      </div>
+    </Router>
+  );
 }
 export default App;
