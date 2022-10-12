@@ -244,3 +244,23 @@
     }
   }
 }
+
+// footer
+.footer {
+  // height: 200px;
+  margin-top: 30px;
+  padding: 50px 0;
+  .footerTitle {
+    font-size: 18px;
+    color: $white;
+    text-transform: uppercase;
+  }
+  .summitJoke {
+    margin-top: 15px;
+    color: $orange;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}
