@@ -127,6 +127,26 @@
         transform: translateY(-50%);
         right: 15px;
       }
+      .searcResult {
+        position: absolute;
+        width: 100%;
+        background-color: $white;
+        top: 130%;
+        text-align: left;
+        border-radius: 4px;
+        box-shadow: 0px 1px 7px 0 rgba(0, 0, 0, 0.15);
+        ul {
+          width: 100%;
+          padding: 20px 15px;
+          li {
+            padding: 6px 0;
+            border-bottom: 1px solid $borderColor;
+            &:last-child {
+              border: none;
+            }
+          }
+        }
+      }
     }
   }
 }

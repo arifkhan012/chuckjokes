@@ -10,8 +10,6 @@ function AllJokes() {
     axios
       .get("/search?query=all")
       .then((res) => {
-        console.log(res.data.result);
-        // console.log(res.data.result.slice(0, 10));
         setJokes(res.data.result);
       })
       .catch((err) => console.log(err));
