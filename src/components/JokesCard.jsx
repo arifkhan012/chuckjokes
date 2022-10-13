@@ -1,6 +1,6 @@
 import React from "react";
 
-function JokesCard() {
+function JokesCard({ joke }) {
   return (
     <div className="jokesCard">
       <div className="jokesDetails">
@@ -8,16 +8,11 @@ function JokesCard() {
           <span>
             <img src={require("../image/green-light-copy@3x.png")} alt="img" />
           </span>
-          <span className="title">Layer Joke</span>
+          <span className="title">
+            {joke.categories[0] ? joke.categories[0] : "Uncategorized"}
+          </span>
         </div>
-        <p className="jokesDesc">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta rem
-          culpa, ipsum, provident veniam alias totam dolorum repellendus nobis
-          repellat, consectetur ex accusamus. Dolorum rerum officiis,
-          necessitatibus assumenda asperiores tenetur aperiam ea enim dolores
-          aliquid unde et eligendi dolore eum ipsam commodi cupiditate. Tempora
-          nam facilis explicabo non earum optio.
-        </p>
+        <p className="jokesDesc">{joke.value}</p>
         <div className="bottomContainer">
           <button className="seeStats">
             SEE STATS{" "}
